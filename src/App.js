@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+//import './App.css';
+import GlobalRouter from "./routes/GlobalRouter";
+import {Footer} from "./components/Footer";
+import {Header} from "./components/Header";
+//importamos el css que se compartira para todas las vistas
+import './styles/styles.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <div className="App-header">
+    <Header/>
+    <GlobalRouter/>
+    <Footer/>
+  </div>
   );
 }
 
