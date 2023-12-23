@@ -1,0 +1,46 @@
+.center-text {
+    text-align: center;
+}
+
+.banner {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.colorbanco{
+    color: white;
+    text-align: center;
+}
+
+.movie-img {
+    max-width: 100%;
+    max-height: 400px;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Estilo para el puntero láser */
+.laser-pointer, .laser-pointer-reverse {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    animation: rotateAround 2s linear infinite;
+}
+
+.laser-pointer-reverse {
+    animation: rotateAroundReverse 2s linear infinite;
+}
