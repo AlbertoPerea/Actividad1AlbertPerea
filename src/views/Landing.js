@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 import useRedirection from "../hooks/useRedirection";
 
 function Landing() {
-    useRedirection("/peliculas", 3000); // Redireccionamos a la vista de restaurantes en 3 segundos
+    useRedirection("/peliculas", 3000); // Redireccionamos a la vista de peliculas en 3 segundos
     return (
         <div className="landing">
             <Link to={"/peliculas"}> {}
