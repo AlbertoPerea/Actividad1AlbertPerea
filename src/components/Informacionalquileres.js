@@ -2,8 +2,10 @@ import { useParams } from 'react-router-dom';
 import { useFetch } from "../hooks/useFetch";
 import Fueradelinea from '../views/Fueradelinea';
 import {Link} from "react-router-dom";
+import {useNavigate} from "react-router";
 
 export const Informacionalquileres = () => {
+  const navigate = useNavigate();
   const { id } = useParams();
   const {isLoading, data} = useFetch(`/${id}/cliente`); 
 
@@ -11,7 +13,7 @@ export const Informacionalquileres = () => {
     return <div>Cargando...</div>
   }
 
-  if (data != null){
+  if (data && data !== "Not found"){
     return (
       <div>
       <Link to={"/peliculas"}>
@@ -44,6 +46,13 @@ export const Informacionalquileres = () => {
       </div>
     );
   }else{
+    return (<div> <h1>No hay datos que mostrar o</h1>
     <Fueradelinea/>
+    <p>Redirecconando a la página principal...</p>
+    {setTimeout(() => {
+            navigate(`/peliculas`);
+        }, '3000')
+    }
+    </div>)
   }
 }
