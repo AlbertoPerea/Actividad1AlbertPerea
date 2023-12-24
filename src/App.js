@@ -9,7 +9,7 @@ function App() {
   return (
   <div className="App-header">
     <Header/>
-    <GlobalRouter/>
+    <GlobalRouter/>    
     <Footer/>
   </div>
   );
