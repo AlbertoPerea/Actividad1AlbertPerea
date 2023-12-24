@@ -44,3 +44,13 @@
 .laser-pointer-reverse {
     animation: rotateAroundReverse 2s linear infinite;
 }
+
+.text-normal{
+    justify-content: left;   
+    text-align: left;
+    font-size: 10px;
+}
+
+.fondotitulo {
+    background-color: lightgrey;
+  }
