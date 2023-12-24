@@ -6,6 +6,7 @@ import Landing from '../views/Landing';
 import {Movies} from '../views/Movie';
 import {Informacion} from '../components/Informacion';
 import Fueradelinea from '../views/Fueradelinea';
+import {Informacionalquileres} from '../components/Informacionalquileres';
 
 function GlobalRouter() {
     return (
@@ -13,10 +14,11 @@ function GlobalRouter() {
             <Routes>
                 <Route path="/" element={<Landing />} />
                 <Route path="*" element={<Layout><NotFound /></Layout>} />
-                <Route path="/registrarusuario" element={<Layout><Registrousuario /></Layout>} />
+                <Route path="/registrarusuario/*" element={<Layout><Registrousuario /></Layout>} />
                 <Route path="/peliculas" element={<Layout><Movies /></Layout>} />
                 <Route path="/masinfo/:id" element={<Layout><Informacion /></Layout>} />
                 <Route path="/Fueradelinea" element={<Layout><Fueradelinea /></Layout>} />
+                <Route path="/Informacionalquileres/:id" element={<Layout><Informacionalquileres /></Layout>} />
             </Routes>
         </BrowserRouter>
     );

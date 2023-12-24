@@ -10,8 +10,6 @@ export const Movies = () => {
       .then((res) => setMovies(res))
       .catch(error => console.log('No hay conexión a internet o hay un error'));
   }, []);
-
-  console.log(movies.length);
   
   if(movies.length === 0){
     return (

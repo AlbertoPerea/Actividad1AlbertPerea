@@ -1,11 +1,10 @@
 import React from "react";
 import {Link} from "react-router-dom";
-
-function alquilar(id='0'){
-
-}
+import {useNavigate} from "react-router";
 
 export const Movie = (props) => {
+    const navigate = useNavigate();
+
     return (
         <div className="movie-card">
             <div className="div-movie">
@@ -17,7 +16,8 @@ export const Movie = (props) => {
             <p><b>Genero: </b>{props.movie.genero}</p>
             <p><b>Puntuación: </b>{props.movie.puntuacion}</p>
             <div>
-                <button id={props.movie.id} className="center-text alquilarpelicula" type="Button" onClick={alquilar(props.movie.id)}>Alquilar</button>&nbsp;
+                <button id={props.movie.id} className="center-text alquilarpelicula" type="Button" onClick={() => navigate(`/registrarusuario/${props.movie.id}`)}>Alquilar</button>&nbsp;
+                <button id={props.movie.id} className="center-text" type="Button" onClick={() => navigate(`/Informacionalquileres/${props.movie.id}`)}>Ver transacciones</button>&nbsp;
                 <Link className ="colorbanco"  to={`/masinfo/${props.movie.id}`}> {}
                     <h4>Ver triler</h4>
                 </Link>
@@ -25,7 +25,3 @@ export const Movie = (props) => {
         </div>
     );
 }
-
-/*<video width="320" height="180" controls>
-                    <iframe width="560" height="315" src="https://www.youtube.com/watch?v=n4RhSCAE0OA" frameborder="0" allowfullscreen title="ll"/>
-                </video>*/
