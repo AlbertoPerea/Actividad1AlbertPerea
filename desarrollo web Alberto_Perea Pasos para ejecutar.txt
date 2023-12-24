@@ -1,0 +1,25 @@
++++++++++ ACTIVIDAD 1 ++++++++++++++
++++++++++ streaming ++++++++++++++
+
+1- "npm install" //npx create-react-app my-app
+2- "npm install react-router-dom"
+3- "npm install react-player"
+4- "npm start" ejecutar proyecto
+
+Despliegue en Vercel:
+https://streaming-sage.vercel.app/peliculas
+
+++++++++++ ANEXO +++++++++++++++
+Para datos estilo webservice, simulador de BAD END utilizado
+https://mockapi.io/projectshttps://mockapi.io/projects
+
+Proyecto Publico Git hub
+https://github.com/AlbertoPerea/Actividad1AlbertPerea
+
+Ayuda
+https://react-bootstrap.netlify.app/
+https://reactstrap.github.io/?path=/docs/components-forms--form
+Creacion de proyecto de Git: https://www.youtube.com/watch?v=xutmKvLsbKM
+
+Comprimir video https://clideo.com/es/compress-video
+
